@@ -1,0 +1,48 @@
+.jumbotron{
+	background-image: url('../img/fondo.jpg');
+	background-size: 100%
+	background-repeat: no-repeat;
+	background-position: bottom center;
+
+
+}
+
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.onebyone-carosel .active.left { left: -33.33%; }
+.onebyone-carosel .active.right { left: 33.33%; }
+.onebyone-carosel .next { left: 33.33%; }
+.onebyone-carosel .prev { left: -33.33%; }
+
+.rounded-circle {
+    padding: 0px;
+    border-radius: 80%
+} 
+
+ .navbar{
+	background-color: #006400;
+	position: fixed;
+	top: 0;
+
+
+}
+
+
+.img-responsive {
+    padding: 0px;
+    border-radius: 80%
+}
+
+ .col-md-4 > img {
+    border: 1px solid #444;
+    width: 90px;
+    height: 90px;
+    float:center;
+
+}
+
+#navicon{
+    width: 30%;
+    height: 150%;
+    display: inline;
+
+}
