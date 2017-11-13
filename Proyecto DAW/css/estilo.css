@@ -10,6 +10,11 @@ h4{
     color: #47525E;
     text-align: center;
 }
+h5{
+    font-family: lato;
+    color: #47525E;
+    display: inline;
+}
 
 .rounded-circle {
     padding: 0px;
@@ -26,17 +31,32 @@ h4{
 
 }
 
-
-.img-responsive {
-    padding: 0px;
-    border-radius: 80%
+figure{
+    float: left;
 }
 
- .col-md-4 > img {
+.img-responsive {
+    margin: 10px;
     border: 1px solid #444;
-    width: 90px;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+
+}
+.figure-caption{
+    
+    margin-left: 12px;
+    padding: 2px;
+    background-color:  #96B8DF;
+    width: 145px;
+    color: #47525E;
+}
+
+.img{
+    border: 1px solid #444;
+    width: 10px;
     height: 90px;
-    position: absolute;
+    
     float:center;
 
 }
@@ -61,4 +81,7 @@ h4{
     padding-right: 10%;
     padding-left: 10%;
     margin-top: 2%;
+}
+.w-100{
+    padding: 0;
 }
