@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Proyecto de DAW">
+    <meta name="author" content="Jaminson Riascos M, Brenda Bermello">
+    <link rel="icon" href="../img/logo.ico">
+
+    <title>Equipo ABET-ESPOL</title>
+
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="../js/img-swipe.js"></script>
+</head>
+<body>
+	  <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <div  class="container navicon"><img class="navicon" src="../img/abet-espol.jpg"></div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="equipoABET.html">Equipo ABET - ESPOL</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="#">Acerca de</a></li>
+            
+          </ul>
+          <button id="btn-cerrar-sesion" type="button" class="btn btn-secondary ml-5">Cerrar Sesion</button>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <!-- seccion equipoABET-->
+	<section class="containerEquipo">
+		<section id="equipoABET" class="equipo" data-ride="equipoABET">
+			<div class="row">
+                <div class="col-md-12">
+                    <h1 class="">Coordinadores ABET-ESPOL</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div id="map" class="col-md-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7974.034591339369!2d-79.96303017683506!3d-2.1470637937397568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela+Superior+Polit%C3%A9cnica+del+Litoral+(ESPOL)!5e0!3m2!1ses!2sec!4v1511425639710" width="100%" height="101%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <div class="col-md-4" style="">
+                    <h2 class="bg-primary my-2" style="">Coordinadores FIEC</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" id="ingElec" class="btn btn-outline-primary">Ingeniería en  Electricidad:  Jimmy Córdova, MSc.</a>
+                            <a href="#" id="ingEA" class="btn btn-outline-primary">Ingeniería en Electrónica y Automatización: Lisbeth Mena, Msc.</a>
+                            <a href="#" id="ingTeleco" class="btn btn-outline-primary">Ingeniería en Telecomunicaciones: Juan Carlos Avilés, PhD.</a>
+                            <a href="#" id="ingTele" class="btn btn-outline-primary">Ingeniería en Telemática: Vladimir Sánchez, Mg.</a>
+                            <a href="#" id="ingComp" class="btn btn-outline-primary">Ingeniería en Computación: Ginger Saltos, Mg.</a>
+                        </div>
+                    </div>
+                        
+                    <h2 class="bg-primary my-2" contenteditable="true" style="">Coordinadores FICT</h2>    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="" class="btn btn-outline-primary">Ingeniería Civil:  Carlos Rodriguez</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+	</section>
+
+	<!--JS Mapa-->
+	<script type="text/javascript" src="mapaAbetJS.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg2kvlpiePTyr_P8Eveb7W_9TaqZ4VIpM=ESPOL"></script>
+</body>
+</html>
