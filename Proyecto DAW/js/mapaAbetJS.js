@@ -16,6 +16,7 @@ function ingElectricidad() {
           position: ubicacion,
           map: map
         });
+        console.log("hols")
 }
 
 function ingEAutomatizacion(){

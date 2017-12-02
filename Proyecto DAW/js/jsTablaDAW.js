@@ -1,7 +1,6 @@
-var http_request = false;
-
+http_request = false;
 function makeRequest(url,type) {
-    http_request = false;
+   
 
     if (window.XMLHttpRequest) { // Mozilla, Safari,...
         http_request = new XMLHttpRequest();
@@ -23,7 +22,8 @@ function makeRequest(url,type) {
         return false;
     }
 
-    if (type == "application/json"){
+    if (type == 'application/json'){
+        console.log(url)
     	http_request.onreadystatechange = alertContentsJSON;
     } else {
     	http_request.onreadystatechange = alertContentsXML;
@@ -32,6 +32,7 @@ function makeRequest(url,type) {
     http_request.open('GET', url, true);
     http_request.send(null);
 }
+
 
 function llenarTabla(calificacionesDAW) {
 	for(clave in calificacionesDAW) {
@@ -83,6 +84,7 @@ function llenarTabla(calificacionesDAW) {
 
 function alertContentsJSON() {
     if (http_request.readyState == 4) {
+        console.log(http_request)
         if (http_request.status == 200) {
             var calificacionesDAW = JSON.parse(http_request.response);
             llenarTabla(calificacionesDAW);
@@ -93,5 +95,5 @@ function alertContentsJSON() {
 }
 
 window.onload = function(){
-	makeRequest('calificacionesDAW.js','application/json');
+	makeRequest("data/calificacionesDAW.js", 'application/json');
 }

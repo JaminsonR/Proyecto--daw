@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="description" content="Proyecto de DAW">
     <meta name="author" content="Jaminson Riascos M, Brenda Bermello">
-    <link rel="icon" href="../img/logo.ico">
+    <link rel="icon" href="img/logo.ico">
 
-    <title>Calificaciones DAW</title>
+    <title>Abet Proyect</title>
 
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="../js/img-swipe.js"></script>
-
+ 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jsCourseSelect.js"></script>
 </head>
 <body>
-
-  <!-- Fixed navbar -->
+	<!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -33,7 +33,7 @@
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
-          <div  class="container navicon"><img class="navicon" src="../img/abet-espol.jpg"></div>
+        	<div  class="container navicon"><img class="navicon" src="img/abet-espol.jpg"></div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Inicio</a></li>
             <li><a href="equipoABET.html">Equipo ABET - ESPOL</a></li>
@@ -46,41 +46,28 @@
       </div>
     </nav>
 
-    <div>
-		<h1 class="Main">Desarrollo de Aplicaciones Web</h1>
-		<h4 class="subtittle">Paralelo: 1</h4>
-		
+	<div class=col-sm-12>
+		<h1 class="Main" id="course_name">asdgafsg</h1>
+    <h4 class="subtittle" id="course_par">ggg</h4>
+		<div class="col center-block">
+			<table class="table table-bordered table-hover">
+				<tr id="tablaCalificaciones">
+					<th>N° </th>
+					<th>Matrícula</th>
+					<th>Nombres</th>
+					<th>Apellidos</th>
+					<th>Lección 1</th>
+					<th>Lección 2</th>
+					<th>Lección 3</th>
+				</tr>
+				<tbody id="cuerpotabla-calificacionesDAW"></tbody>
+			</table>
+		</div>
 	</div>
-  <section>
-      <div class="container">
-    <figure class="figure">
-      <a href="tablaCalificacionesDAW.html"><img src="../img/import_grades.jpg" class="rounded float-left img-responsive" alt="Importar calificaciones"></a>
-      <figcaption class="figure-caption">Importar calificaciones</figcaption>
-    </figure>
 
-    <figure class="figure">
-      <img src="../img/stats.jpg" class="rounded float-center img-responsive" alt="Ver estadisticas">
-      <figcaption class="figure-caption">Ver estadisticas</figcaption>
-    </figure>
-
-    <figure class="figure">
-      <img src="../img/export_data.png" class="rounded float-right img-responsive" alt="exportar datos">
-      <figcaption class="figure-caption">Exportar Datos</figcaption>
-    </figure>
-
-    <figure class="figure">
-      <img src="../img/students.jpg" class="rounded float-right img-responsive" alt="Gestionar estudiantes">
-      <figcaption class="figure-caption">Gestionar estudiantes</figcaption>
-    </figure>
-
-    <figure class="figure">
-      <img src="../img/config.jpg" class="rounded float-center img-responsive" alt="configuraciones">
-      <figcaption class="figure-caption">Configuraciones</figcaption>
-    </figure>
-  
-
-  </div>
-  </section>
-
+    
+    
+    <!--Script incluir jsTabla-->
+    <script src="js/jsTablaDAW.js"></script>
 </body>
 </html>
