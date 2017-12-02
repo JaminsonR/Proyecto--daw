@@ -169,11 +169,11 @@ ul < a{
     color: #47525E;
     padding: 3px;
     font-size: 0.5em;
-}
+    }
 
-#course_selection{
-    left:25%;
-}
+    #course_selection{
+        left:25%;
+    }
 
     #p{
         border-color: black;
@@ -240,6 +240,22 @@ ul < a{
         margin-bottom: 2%;
     }
 
+
+    /**Media para TimeLine*/
+    .timeline:before {
+        display: none;
+    }
+
+    .timeline > li .timeTexto {
+        width: 80%;
+        position: relative;
+        padding: 0 0 20px 0;
+    }
+
+    .timeline > li .timeTexto span {
+        text-align: left;
+        color: #FAAC58;
+    }
 }
 
 
@@ -271,5 +287,112 @@ ul < a{
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); }
 
 /*------------------------------Fin Css para pestaña equipoABET----------------------------*/
+
+
+/*------------------------------Time Line----------------------------*/
+#titTimeLine{
+    text-shadow: 5px 20px 0 #F5DA81;
+}
+
+.timeLine{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.timeLine:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: #FAAC58;
+    left: 20%;
+    margin-left: -10px;
+}
+
+.timeLine > li .timeTexto{
+    display: block;
+    width: 25%;
+    padding-right: 100px;
+    position: absolute;
+}
+
+.timeLine > li .timeTexto span {
+    display: block;
+    text-align: right;
+}
+
+.timeLine > li .timeTexto span:first-child {
+    font-size: 0.5em;
+    color: #FAAC58;
+}
+
+.timeLine > li .timeTexto span:last-child {
+    font-size: 2.5em;
+    color: #3594cb;
+}
+
+.timeline > li:nth-child(odd) .timeTexto span:last-child {
+    color: #6cbfee;
+}
+
+
+.timeLine > li .timeTexto{
+    font-size: 0.5em;
+    color: #FAAC58;
+}
+
+.timeLine > li .descripcionTexto {
+    text-align: justify;
+    color: #000;
+    background: #CED8F6;
+    font-size: 1.0em;
+    margin: 0 0 15px 25%;
+    padding: 2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 4px;
+
+}
+
+.timeLine > li:nth-child(odd) .descripcionTexto {
+    background: #81BEF7;
+}
+
+.timeLine > li .descripcionTexto h2 { 
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Triangulo */
+.timeLine > li .descripcionTexto:after {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    border-right-color: #CED8F6;
+    border-width: 10px;
+    
+}
+
+.timeLine > li:nth-child(odd) .descripcionTexto:after {
+    border-right-color: #81BEF7;
+}
+
+.descripcionTexto{
+    width: 70%;
+}
+
+/*----------------------------Fin Time Line---------------------------*/
+
+
 
 
