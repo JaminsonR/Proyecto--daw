@@ -3,19 +3,22 @@
 		"id":"001",
 		"codigo":"FIEC01",
 		"nombre":"Desarrollo de Aplicaciones Web",
-		"paralelo":"1"
+		"paralelo":"1", 
+		"calificaciones": "data/calificacionesDAW.js"
 	},
 	{	
 		"id":"002",
 		"codigo":"FIEC02",
 		"nombre":"Bases de Datos",
-		"paralelo":"5"
+		"paralelo":"5",
+		"calificaciones": "data/calificacionesBases.js"
 	},
 	{
 		"id":"003",
 		"codigo":"FIEC03",
 		"nombre":"Interaccion Humano Computador",
-		"paralelo":"101"
+		"paralelo":"101",
+		"calificaciones": "data/calificacionesIHC.js"
 	}
 
 ]

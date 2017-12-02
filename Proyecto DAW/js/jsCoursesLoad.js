@@ -24,8 +24,8 @@ $("#course_selection").on("click", "li", function(event){
 });
 
 
-window.onload = function(){
+$(window).load(function() {
 	load_courses();
 
-}
+});
 

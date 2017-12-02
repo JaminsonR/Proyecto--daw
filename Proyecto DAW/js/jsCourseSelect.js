@@ -8,7 +8,7 @@ function loadCourse() {
             if (val["id"] == id){
                 var nombre = val["nombre"];
                 var paralelo = val["paralelo"];
-                console.log("holi boli");
+
                 $("#course_name").text(nombre);
                 $("#course_par").text("Paralelo: " + paralelo);
                 
