@@ -18,7 +18,7 @@
 		"codigo":"FIEC03",
 		"nombre":"Interaccion Humano Computador",
 		"paralelo":"101",
-		"calificaciones": "data/calificacionesIHC.js"
+		"calificaciones": "data/calificacionesIHC.json"
 	}
 
 ]

@@ -21,7 +21,7 @@ function loadCourse() {
 
 }
 
-//Capturar evento de seleccion de opcion solo en la pagina curso_select
+//Capturar evento de seleccion de opcion Importar Calificaciones solo en la pagina curso_select
 if (window.location.href.toLowerCase().indexOf("curso_select.html") >= 0){
 
    $(document).ready(function() 
@@ -32,7 +32,7 @@ if (window.location.href.toLowerCase().indexOf("curso_select.html") >= 0){
         var id = window.location.href.slice(window.location.href.indexOf('?') + 1);
         if ($(this).attr("id") == "Importar calificaciones"){
             window.location.href = "importarCalificaciones.html" + "?" + id;
-            loadCourse();
+            
         }
     });
  });
@@ -42,6 +42,27 @@ if (window.location.href.toLowerCase().indexOf("curso_select.html") >= 0){
  
 }
 
+
+//Capturar evento de seleccion de opcion ver estadisticas solo en la pagina curso_select
+if (window.location.href.toLowerCase().indexOf("curso_select.html") >= 0){
+
+   $(document).ready(function() 
+ {
+    $('.figure').click(function(event) 
+    { 
+        
+        var id = window.location.href.slice(window.location.href.indexOf('?') + 1);
+        if ($(this).attr("id") == "Ver estadisticas"){
+            window.location.href = "estadisticas.html" + "?" + id;
+            
+        }
+    });
+ });
+  
+
+
+ 
+}
 
 $(window).load(function() {
 

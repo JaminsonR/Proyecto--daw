@@ -29,13 +29,13 @@ body{
     padding: 3px;
     font-size: 0.8em;
 }
-#course_selection li:hover{
+#course_selection li:hover,.figure-caption:hover,.navbar li:hover{
   background: #ffffff;
-  background-image: -webkit-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: -moz-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: -ms-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: -o-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: linear-gradient(to bottom, #ffffff, #f78e0f);
+  background-image: -webkit-linear-gradient(top, #ffffff,       #1E90FF);
+  background-image: -moz-linear-gradient(top, #ffffff,          #1E90FF);
+  background-image: -ms-linear-gradient(top, #ffffff,       #1E90FF);
+  background-image: -o-linear-gradient(top, #ffffff,        #1E90FF);
+  background-image: linear-gradient(to bottom, #ffffff,         #1E90FF);
 }
 
 h1{
@@ -68,17 +68,19 @@ h5{
     display: inline-block;
 }
 
-.navbar li:hover{
-  background: #ffffff;
-  background-image: -webkit-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: -moz-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: -ms-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: -o-linear-gradient(top, #ffffff, #f78e0f);
-  background-image: linear-gradient(to bottom, #ffffff, #f78e0f);
-}
 
 figure{
     float: left;
+}
+
+.img-responsive:hover{
+  padding: 1%;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(top,#00CED1,#1E90FF);
+  background-image: -moz-linear-gradient(top,#00CED1,#1E90FF);
+  background-image: -ms-linear-gradient(top,#00CED1, #1E90FF);
+  background-image: -o-linear-gradient(top,#00CED1, #1E90FF);
+  background-image: linear-gradient(to bottom,#00CED1, #1E90FF);
 }
 
 .img-responsive {
@@ -87,6 +89,7 @@ figure{
     width: 300px;
     height: 200px;
     display: inline-block;
+
 
 }
 .figure-caption{
@@ -131,7 +134,9 @@ ul < a{
     display: block;
 }
 
-
+#stats{
+    width: 50%;
+}
 
 .col-centered{
     float: none;
@@ -214,6 +219,7 @@ ul < a{
         height: 50px;
         margin: 20px;
     }
+    
 
     section{
         margin-left: 10%;
