@@ -29,6 +29,7 @@
   border-radius: 2px;
   padding: 1%;
 
+
 }
 
 /* Creates a small triangle extender for the tooltip */
@@ -52,33 +53,49 @@
   left: 0;
 }
 
-#stats{
+#stat{
 
-    width: 100%;
+    border-width: 1%;
+    border-style: solid;
+    border-color: #47525E;
+    width: 80%;
 }
 
 g text{
   font-size: 0.9em;
 }
+svg{
+  
+  padding-left: 20%;
+  padding-right: 10%
+}
+
+
 
 @media only screen and (max-width: 500px) {
- g text{
-  font-size: 0.5em;
-}
-.d3-tip {
-  line-height: 1;
-  font-weight: bold;
+   g text{
+    font-size: 0.3em;
+  }
+  .d3-tip {
+    line-height: 1;
+    font-weight: bold;
 
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
-  height: 3.5%;
-  width: auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    height: 3.5%;
+    width: auto;
 
-}
 
-.d3-tip strong,span{
-  font-size: 0.5em;
+  }
+
+  .d3-tip strong,span{
+    font-size: 0.3em;
+  }
+  svg{
+  
+  padding-left: 15%;
+  padding-right: 9%
 }
 
 

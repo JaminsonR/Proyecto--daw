@@ -7,16 +7,12 @@ var url = ""
                 if (val["id"] == id){
                   // set the dimensions of the canvas
                   var margin = {top: 40, right: 20, bottom: 30, left: 40},
-                      height = ($("#stat").width()*0.5) -  margin.left - margin.right;
-                      width = ($("#stat").width()*0.8)  - margin.top - margin.bottom; 
-                      console.log(height);
-/*
-  
-*/
+                      height = ($("#stat").width()*0.40) ;
+                      width = ($("#stat").width()*0.8) ; 
                   var formatPercent = d3.format(".0%");
                   // set the ranges
                   var x = d3.scale.ordinal()
-                      .rangeRoundBands([0, width], .1);
+                      .rangeRoundBands([0, width*0.6], .1);
 
                   var y = d3.scale.linear()
                       .range([height, 0]);
@@ -29,14 +25,24 @@ var url = ""
                       .scale(y)
                       .orient("left")
                       .tickFormat(formatPercent);
-
-                  var tip = d3.tip()
-                    .attr('class', 'd3-tip')
-                    .attr('width', '0.1em')
-                    .offset([-10, 0])
-                    .html(function(d) {
-                      return "<strong>Frequency:</strong> <span style='color:red'>" + d.promedio + "</span>";
-                    })
+                  if ($("#stat").width() >500){
+                    var tip = d3.tip()
+                      .attr('class', 'd3-tip')
+                      .attr('width', '0.1em')
+                      .offset([-10, 270])
+                      .html(function(d) {
+                        return "<strong>Frequency:</strong> <span style='color:red'>" + d.promedio + "</span>";
+                      })
+                    }else{
+                      var tip = d3.tip()
+                      .attr('class', 'd3-tip')
+                      .attr('width', '0.1em')
+                      .offset([-10, 33])
+                      .html(function(d) {
+                        return "<strong>Frequency:</strong> <span style='color:red'>" + d.promedio + "</span>";
+                      })
+                      console.log("cacac")
+                    }
                   // add the SVG element
                     var svg = d3.select("#stat").append("svg")
                       .attr("width", width + margin.left + margin.right)
@@ -76,6 +82,7 @@ var url = ""
                         .attr("class", "bar")
                         .attr("x", function(d) { return x(d.matricula); })
                         .attr("width", x.rangeBand())
+
                         .attr("y", function(d) { return y(d.promedio); })
                         .attr("height", function(d) { return height - y(d.promedio); })
                         .on('mouseover', tip.show)
