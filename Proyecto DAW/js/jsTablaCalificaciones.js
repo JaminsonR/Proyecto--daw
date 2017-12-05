@@ -14,11 +14,11 @@ function llenarTabla() {
 
                             var tbody = document.getElementById("cuerpotabla-calificaciones");
                             var newTr = document.createElement("tr");
-                            newTr.setAttribute('id','calificaciones'+clave[3]);
+                            //newTr.setAttribute('id','calificaciones'+clave[1]);
                             tbody.appendChild(newTr);
 
                             var numTd = document.createElement("td");
-                            var num = document.createTextNode(clave[3]);
+                            var num = document.createTextNode(calificaciones["estudiante"]);
                             numTd.appendChild(num);
 
                             var matriculaTd = document.createElement("td");

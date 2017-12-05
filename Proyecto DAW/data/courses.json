@@ -4,14 +4,14 @@
 		"codigo":"FIEC01",
 		"nombre":"Desarrollo de Aplicaciones Web",
 		"paralelo":"1", 
-		"calificaciones": "data/calificacionesDAW.js"
+		"calificaciones": "data/calificacionesDAW.json"
 	},
 	{	
 		"id":"002",
 		"codigo":"FIEC02",
 		"nombre":"Bases de Datos",
 		"paralelo":"5",
-		"calificaciones": "data/calificacionesBases.js"
+		"calificaciones": "data/calificacionesBases.json"
 	},
 	{
 		"id":"003",
