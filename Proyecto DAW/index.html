@@ -6,41 +6,38 @@
 	<meta name="description" content="Proyecto de DAW">
     <meta name="author" content="Jaminson Riascos M, Brenda Bermello">
     <link rel="icon" href="img/logo.ico">
-
-    <title>Abet Proyect</title>
-
-    <link href="css/navbar-fixed-top.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/importNavbar.js"></script>
-   
-
+	<title>Ingreso sistema ABET-ESPOL</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloIndex.css">
+	<script type="text/javascript" src="js/jsIngreso.js"></script>
 </head>
 <body>
-	<div class="container" id="navbar"></div>
+	<!--Cabecera-->
+	    <header>
+	      <section>
+	        <img id="imagen" src="img/abet-espol.jpg" alt="Logo de abet-espol" width="200">
+	        <div>
+	          <h1>ABET - ESPOL</h1>
+	        </div>
+	      </section> 
+	    </header>
+	<!--Fin Cabecera-->
 
-	<div>
-		<h1 class="Main">Bienvenido</h1>
-		<h4 class="subtittle">Seleccione un curso para continuar</h4>
-		
-	</div>
-	<div class="container" >
-		<div class="horizontal-center-row" >
-			<div class="col-xs-10 col-centered" >
-				<div class="dropdown" >
-				   <button id="cursos" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione un curso
-				   <span class="caret"></span></button>
-				   <ul class="dropdown-menu" id="course_selection">
-				     
-				   </ul>
-			    </div>
-				
-			</div>
-		</div>
-	</div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jsCoursesLoad.js"></script>
+	<section>
+		<form name="form" action="#" method="post">
+	    	<p>
+	      		<label for="username">Usuario</label>
+	      		<input id="username" name="username" type="text" placeholder="Ingresa tu usuario" required="required">
+	      		<span>@espol.edu.ec</span>
+	    	</p>
+	    	<p>
+	      		<label for="password">Contraseña</label>
+	      		<input id="password" name="password" type="password" placeholder="Ingresa la contraseña" required="required">
+	    	</p>
+	    	<p>
+	      		<input id="submit" type="button" value="LOGIN" onclick="ingresar()">
+	    	</p>
+  		</form>
+	</section>
+
 </body>
 </html>
