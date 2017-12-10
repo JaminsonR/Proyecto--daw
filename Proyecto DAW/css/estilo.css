@@ -267,9 +267,9 @@ ul < a{
 
 
 /*-------------------------------Css para pestaña equipoABET-------------------------------*/
-#map{
+/*#map{
     height: 40rem;
-    /*width: 40rem;*/
+    /*width: 40rem;
 }
 
 .alert-heading {
@@ -290,7 +290,7 @@ ul < a{
     border-color: #007bff; 
 }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); }
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); }*/
 
 /*------------------------------Fin Css para pestaña equipoABET----------------------------*/
 
