@@ -264,6 +264,14 @@ ul < a{
     }
 }
 
+@media screen and (max-width: 500px){
+  table{
+    display: block;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+}
+
 
 
 /*-------------------------------Css para pestaña equipoABET-------------------------------*/
