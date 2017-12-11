@@ -5,8 +5,24 @@
   display: inline-block;
 }
 
+#boton{
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  display: inline-grid;
+  box-sizing: border-box;
+  width: 100px;
+  height: 35px;
+  outline: none;
+  text-align:center;
+  border-radius: 5px;
+  background: #819FF7;
+  margin-left: 2rem;
+  border-right-color: #2F558E;
+}
+
 .demo-gallery > ul {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .demo-gallery > ul > li {
