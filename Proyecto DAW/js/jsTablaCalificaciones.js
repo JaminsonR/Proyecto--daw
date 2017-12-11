@@ -21,6 +21,15 @@ function llenarTabla() {
                             var num = document.createTextNode(calificaciones["estudiante"]);
                             numTd.appendChild(num);
 
+                            var fotoTd = document.createElement("td");
+                            var src = document.createTextNode(calificaciones["foto"]).data;
+                            var img = document.createElement("img");
+                            img.src=src;
+                            img.style.height="5rem";
+                            img.style.width="6rem";
+                            /*$(img).attr("src", src1);*/
+                            fotoTd.appendChild(img);
+
                             var matriculaTd = document.createElement("td");
                             var matricula = document.createTextNode(calificaciones["matricula"]);
                             matriculaTd.appendChild(matricula);
@@ -46,6 +55,7 @@ function llenarTabla() {
                             leccion3Td.appendChild(leccion3);
 
                             newTr.appendChild(numTd);
+                            newTr.appendChild(fotoTd);
                             newTr.appendChild(matriculaTd);
                             newTr.appendChild(nombresTd);
                             newTr.appendChild(apellidosTd);
