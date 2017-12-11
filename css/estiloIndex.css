@@ -4,6 +4,10 @@ body {
   font-size: 10px
 }
 
+.index{
+  font-family: Josefin Slab;
+}
+
 header > section> img{
   display: block;
   margin-left: auto;
