@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Proyecto de DAW">
+    <meta name="author" content="Jaminson Riascos M, Brenda Bermello">
+    <link rel="icon" href="img/logo.ico">
+	<title>Ingreso sistema ABET-ESPOL</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloIndex.css">
+	<script type="text/javascript" src="js/jsIngreso.js"></script>
+</head>
+<body>
+	<!--Cabecera-->
+	    <header>
+	      <section>
+	        <img id="imagen" src="img/abet-espol.jpg" alt="Logo de abet-espol" width="200">
+	        <div>
+	          <h1>ABET - ESPOL</h1>
+	        </div>
+	      </section> 
+	    </header>
+	<!--Fin Cabecera-->
+
+	<section>
+		<form name="form" action="#" method="post">
+	    	<p>
+	      		<label for="username">Usuario</label>
+	      		<input id="username" name="username" type="text" placeholder="Ingresa tu usuario" required="required">
+	      		<span>@espol.edu.ec</span>
+	    	</p>
+	    	<p>
+	      		<label for="password">Contraseña</label>
+	      		<input id="password" name="password" type="password" placeholder="Ingresa la contraseña" required="required">
+	    	</p>
+	    	<p>
+	      		<input id="submit" type="button" value="LOGIN" onclick="ingresar()">
+	    	</p>
+  		</form>
+	</section>
+
+</body>
+</html>

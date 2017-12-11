@@ -1,0 +1,24 @@
+[
+	{
+		"id":"001",
+		"codigo":"FIEC01",
+		"nombre":"Desarrollo de Aplicaciones Web",
+		"paralelo":"1", 
+		"calificaciones": "data/calificacionesDAW.json"
+	},
+	{	
+		"id":"002",
+		"codigo":"FIEC02",
+		"nombre":"Bases de Datos",
+		"paralelo":"5",
+		"calificaciones": "data/calificacionesBases.json"
+	},
+	{
+		"id":"003",
+		"codigo":"FIEC03",
+		"nombre":"Interaccion Humano Computador",
+		"paralelo":"101",
+		"calificaciones": "data/calificacionesIHC.json"
+	}
+
+]

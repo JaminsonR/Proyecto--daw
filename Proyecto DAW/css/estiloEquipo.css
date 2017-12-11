@@ -1,0 +1,27 @@
+
+.containerCoord {
+  display:flex;
+  height:100vh;
+  align-content:stretch;
+  background:#fff;
+}
+
+ #list {
+    flex:0 0 25%;
+    padding:0 1em;
+    box-sizing:border-box;
+    background:#dedede;
+    list-style:none;
+}
+
+li { 
+	margin-bottom:0.5em; 
+}
+
+  
+#map {
+    width: 100%;
+    flex:0 0 75%;
+    margin:0 auto;
+    background: lightgrey;
+}

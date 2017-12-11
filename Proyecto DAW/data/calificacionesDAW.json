@@ -1,0 +1,8 @@
+[
+	{"estudiante":"1","foto":"img/est1.jpeg","matricula":"201225894","nombres":"Maria Alejandra","apellidos":"Aguirre Castro","leccion1":"60","leccion2":"75","leccion3":"68","promedio":"0.675"},
+	{"estudiante":"2","foto":"img/est2.jpeg","matricula":"201126863","nombres":"Antonio Isaias","apellidos":"Mera Borbor","leccion1":"90","leccion2":"75","leccion3":"85","promedio":"0.834"},
+	{"estudiante":"3","foto":"img/est5.jpeg","matricula":"201147802","nombres":"Juan Andres","apellidos":"Zambrano Loor","leccion1":"45","leccion2":"47","leccion3":"50","promedio":"0.47"},
+	{"estudiante":"4","foto":"img/est4.jpeg","matricula":"201147802","nombres":"Josefina Alexandra","apellidos":"Villavicencio Marin","leccion1":"77","leccion2":"67","leccion3":"87","promedio":"0.67"},
+	{"estudiante":"5","foto":"img/est7.jpeg","matricula":"201147802","nombres":"Michelle Judith","apellidos":"Henriquez Calero","leccion1":"84","leccion2":"94","leccion3":"40","promedio":"0.73"},
+	{"estudiante":"6","foto":"img/est8.jpg","matricula":"201147802","nombres":"Dennis Jesus","apellidos":"Jimenez Soto","leccion1":"66","leccion2":"49","leccion3":"85","promedio":"0.666"}
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Proyecto de DAW">
+    <meta name="author" content="Jaminson Riascos M, Brenda Bermello">
+    <link rel="icon" href="img/logo.ico">
+
+    <title>Equipo ABET-ESPOL</title>
+
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloEquipo.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/img-swipe.js"></script>
+    
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+</head>
+<body>
+	
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <div  class="container navicon"><a href="index.html"><img class="navicon" src="img/abet-espol.jpg"></img></a></div>
+          <ul class="nav navbar-nav">
+            <li class="inicio"><a href="inicio.html">Inicio</a></li>
+            <li class="equipo"><a href="equipoABET.html">Equipo ABET - ESPOL</a></li>
+            <li class="TimeLine" ><a href="TimeLine.html">Nosotros</a></li>
+            <li class="calendario" ><a href="calendario.html">Calendario</a></li>
+            <li class="galeria"><a href="ligthgallery/galeria.html">Galeria</a></li>
+          </ul>
+          <button id="btn-cerrar-sesion" type="button" class="btn btn-secondary ml-5">Cerrar Sesion</button>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- seccion equipoABET-->
+	<section class="containerEquipo">
+		<section id="equipoABET" class="equipo" data-ride="equipoABET">
+			<div class="row">
+                <div class="col-md-12">
+                    <h1 class="">Coordinadores ABET-ESPOL</h1>
+                </div>
+            </div>
+            <div class="containerCoord">
+                <div id="list">
+                    <h3>Coordinadores</h3>
+                </div>
+                <div id="map"></div>
+            </div>
+		</section>
+	</section>
+
+	<!--JS Mapa-->
+	<script src="js/jsMapa.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg2kvlpiePTyr_P8Eveb7W_9TaqZ4VIpM=ESPOL"></script>
+    <!--<script src="js/importNavbar.js"></script>-->
+</body>
+</html>
